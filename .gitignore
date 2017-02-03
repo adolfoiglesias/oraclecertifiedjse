@@ -1,0 +1,20 @@
+# Extracted from https://github.com/ulrich/macaron-factory/blob/master/.gitignore
+# Ignore all dotfiles...
+
+# except for .gitignore
+!.gitignore
+
+# Ignore Idea Config
+*.ipr
+*.iws
+*.iml
+*.ids
+
+.classpath
+.settings
+.project
+
+*~
+
+
+/bin/
