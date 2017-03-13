@@ -11,12 +11,15 @@ public class AnonymousClass {
 
 	public Object food(){
 		
-		return new Object(){
-			@Override
+		return new ClassA(){
+		
 			public String toString() {
 				// TODO Auto-generated method stub
 				return "anonymous";
 			}
 		};
+		
+		
+		
 	}
 }

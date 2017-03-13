@@ -16,5 +16,6 @@ public class InnerClassSample {
 	 */
 	class InnerClass{
 		// definition here
+		static int age;  // no puede ser static en una inner class no estatica
 	}
 }

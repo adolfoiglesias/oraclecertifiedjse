@@ -24,15 +24,13 @@ public class SomeClass {
 	}
 	
 	// Local class en el constructor
-	public SomeClass(String name) {
+	public SomeClass(final String name) {
 		this.name = name;
 		
 		class LocalClass{
 			final double amount = 10d; // si se peude declaar varibales finales
 			
-			public void method(String name){ // solo variables final
-				System.out.println(name);
-				name = "Modificando " + name;
+			public void method(){ // solo variables final
 				System.out.println(name);
 			}
 		}
@@ -40,9 +38,8 @@ public class SomeClass {
 		LocalClass class1  = new LocalClass();
 		System.out.println(class1.amount); // se peudeo acceder a los atributos de la clase anidada
 		
-		class1.method(this.name); // se pueden pasar atriutos de la clase de arriba
-		
-		class1.method("Otro texto...");
+		class1.method();
+	
 	}
 	
 	/*public void otherMethod(){
