@@ -1,7 +1,7 @@
 /**
  * 
  */
-package chapter12.bundle.property;
+package chapter12.bundle.properties;
 
 import java.util.Arrays;
 import java.util.List;
@@ -30,6 +30,8 @@ public class LocalizedHello {
 		
 		resBundle = ResourceBundle.getBundle("chapter12.bundle.property.ResourceBundle",Locale.getDefault(),new ResourceBundle.Control(){
 			
+			// Este metodo saca todos los locales candidatos para el Locale que esta pasando actualmente. 
+			// Se peude cambiar el comportamiento acá
 			@Override
 			public List<Locale> getCandidateLocales(String baseName,
 					Locale locale) {
